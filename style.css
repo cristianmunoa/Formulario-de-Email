@@ -13,7 +13,7 @@ background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, F
 
 .formulario{
     min-height: 500px;
-    width: 50%;
+    width: 600px;
 }
 
 label, input{
@@ -84,17 +84,39 @@ form div:first-child{
 }
 
 
-.db {
-  background-color: white;
-  width: 300px;
-  height: 600px;
+.flex-db{
   position: absolute;
   left: 0;
+  
+}
+
+
+.db {
+  
+  background-color: white;
+  width: 300px;
+  height: auto;
+  min-height: 300px;
   margin-left: 10px;
   overflow-y: scroll;
+  
 }
 
 .db p {
   margin: 0 auto;
 }
 
+@media (max-width: 700px){
+  
+
+
+ .formulario{
+    width: 300px;
+     padding-bottom: 10px;
+ }
+ 
+ .flex-db {
+   display: none;
+ }
+
+}
